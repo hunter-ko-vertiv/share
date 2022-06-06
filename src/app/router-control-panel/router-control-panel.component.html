@@ -1,0 +1,15 @@
+<div class="my-8 mx-4 py-4 px-2 shadow">
+  <div class="text-2xl pb-2">Control Panel</div>
+  <app-toggle-switch label="CanActivateState"
+                     (switchChange)="setActivateState($event)"
+  ></app-toggle-switch>
+  <app-toggle-switch label="CanActivateChildState"
+                     (switchChange)="setActivateChildState($event)"
+  ></app-toggle-switch>
+  <app-toggle-switch label="CanDeactivateState"
+                     (switchChange)="setDeActivateState($event)"
+  ></app-toggle-switch>
+  <app-toggle-switch label="CanLoadState"
+                     (switchChange)="setLoadState($event)"
+  ></app-toggle-switch>
+</div>

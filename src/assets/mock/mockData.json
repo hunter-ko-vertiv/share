@@ -1,0 +1,25 @@
+{
+  "id":  "",
+  "api_version":  "v1",
+  "chassis":  "/api/v1/chassis",
+  "description":  "Platform Management Root Service",
+  "managers":  "/api/v1/managers",
+  "name":  "/api/v1",
+  "product_name":  "ADX_MP1000",
+  "uuid":  "4c4c4544-0056-4210-8031-b7c04f4e3833",
+  "vendor":  "Vertiv Corp.",
+  "software_version":  "latest-release-1.22.0-20220601-195428",
+  "firmware_version":  "3.12.2",
+  "serial_number":  "7VB1N83",
+  "links":  [
+    {
+      "description":  "The collection of Chassis representing each Chassis of the appliance.",
+      "url":  "/api/v1/chassis"
+    },
+    {
+      "description":  "The collection of Managers representing each Manager of the appliance.",
+      "url":  "/api/v1/managers"
+    }
+  ],
+  "product":  "ADX_MP1000"
+}

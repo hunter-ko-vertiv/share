@@ -1,0 +1,10 @@
+<div class="grid grid-cols-4 mb-4">
+  <div class="col-span-2" *ngIf="label">{{label}}</div>
+  <input class="cursor-pointer col-span-1" type="checkbox" (change)="setChecked($event)" [checked]="getChecked()">
+  <p class="ml-2 col-span-1">
+    <ng-container *ngIf="getChecked(); else unchecked">On</ng-container>
+    <ng-template #unchecked>Off</ng-template>
+  </p>
+</div>
+
+

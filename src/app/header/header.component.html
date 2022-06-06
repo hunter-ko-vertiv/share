@@ -1,0 +1,11 @@
+<div class="shadow-md">
+  <ul class="flex justify-around max-w-7xl mx-auto">
+    <li class="px-2 py-3 cursor-pointer text-sky-600"
+        *ngFor="let link of demoLinks; let i = index;"
+        [ngClass]="link.activate? 'activate': 'deactivate'"
+        [routerLink]="link.url"
+    >
+      {{ link.displayText }}
+    </li>
+  </ul>
+</div>

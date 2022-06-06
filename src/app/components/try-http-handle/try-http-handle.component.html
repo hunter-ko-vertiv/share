@@ -1,0 +1,19 @@
+<div class="grid grid-cols-2 gap-2">
+  <div class="col-span-2 mb-4">
+    <button class="bg-sky-800 text-white cursor-pointer p-2 rounded mr-4" (click)="correctRequest()">
+      Correct Request
+    </button>
+    <button class="bg-red-600 text-white cursor-pointer p-2 rounded" (click)="errorRequest()">
+      Fail Request
+    </button>
+  </div>
+  <div class="border-2 col-span-1 p-2">
+    <div class="text-2xl">Request Data</div>
+    {{req | json}}
+  </div>
+  <div class="border-2 col-span-1 p-2">
+    <div class="text-2xl">Response Data</div>
+    {{res | json}}
+  </div>
+</div>
+
